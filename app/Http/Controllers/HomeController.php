@@ -10,6 +10,8 @@ use App\Models\User;
 
 use App\Models\Product;
 
+use App\Models\Cart;
+
 class HomeController extends Controller
 {
     public function redirect()
@@ -57,5 +59,39 @@ class HomeController extends Controller
         $data = product::where('title','Like','%'.$search.'%')->get();
 
         return view('user.home',compact('data'));
+    }
+
+    public function addcart(Request $request, $id)
+    {
+        if(Auth::id())
+        {
+            $user=auth()->user();
+
+            $product=product::find($id);
+
+            $cart=new cart;
+
+            $cart->name=$user->name;
+
+            $cart->phone=$user->phone;
+
+            $cart->address=$user->address;
+            
+            $cart->name=$user->name;
+            
+            $cart->product_title=$product->title;
+
+            $cart->price=$product->price;
+
+            $cart->quantity=$request->quantity;
+
+            $cart->save();
+
+            return redirect()->back()->with('message','Product Added Successfull');
+        }
+        else
+        {
+            return redirect('login');
+        }
     }
 }

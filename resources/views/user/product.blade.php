@@ -1,3 +1,4 @@
+
 <div class="latest-products">
     <div class="container">
         <div class="row">
@@ -8,7 +9,7 @@
 
                     <form action="{{url('search')}}" method="get" class="form-inline" style="float: right; padding: 10px">
                         <input class="form-control" type="search" name="search" placeholder="Search">
-                        <input type="submit" value="Search" class="btn btn-success">
+                        <input type="submit" style="color: black; font-weight: bold;" value="Search" class="btn btn-success">
                     </form>
                 </div>
             </div>
@@ -22,7 +23,14 @@
                 <a href="#"><h4>{{$product->title}}</h4></a>
                 <h6>${{$product->price}}</h6>
                 <p>{{$product->description}}</p>
-                <a href="#" class="btn btn-primary">Add Cart</a>
+                <!-- <a href="#" class="btn btn-primary">Add Cart</a> -->
+                <form action="{{url('addcart',$product->id)}}" method="post">
+
+                    @csrf
+
+                    <input type="number" min="1" class="form-control" style="width: 100px;" name="quantity"><br>
+                    <input type="submit" style="color: black; font-weight: bold;" class="btn btn-primary" value="Add Cart">
+                </form>
                 </div>
             </div>
             </div>
