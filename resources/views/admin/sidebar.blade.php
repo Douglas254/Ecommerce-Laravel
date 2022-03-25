@@ -155,7 +155,16 @@
                             <span class="menu-icon">
                                 <i class="mdi mdi-file-document-box"></i>
                             </span>
-                            <span class="menu-title">Products</span>
+                            <span class="menu-title">Add New Products</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item menu-items">
+                        <a class="nav-link" href="{{url('showproduct')}}">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-file-document-box"></i>
+                            </span>
+                            <span class="menu-title">Show all Products</span>
                         </a>
                     </li>
                 </ul>
