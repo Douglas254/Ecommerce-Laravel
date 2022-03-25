@@ -86,6 +86,18 @@ https://templatemo.com/tm-546-sixteen-clothing
           </div>
         </div>
       </nav>
+
+      
+     @if(session()->has('message'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span style="padding-right: 5px; font-size: 20px;">X</span></button>
+
+            {{session()->get('message')}}
+
+        </div>
+    @endif
+    
     </header>
 
     <!-- Page Content -->
