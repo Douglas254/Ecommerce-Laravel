@@ -37,6 +37,10 @@ Route::get('/showproduct',[AdminController::class,'showproduct']);
 
 Route::get('/deleteproduct/{id}',[AdminController::class,'deleteproduct']);
 
+Route::get('/updateview/{id}',[AdminController::class,'updateview']);
+
+Route::post('/updateproduct/{id}',[AdminController::class,'updateproduct']);
+
 
 
 
