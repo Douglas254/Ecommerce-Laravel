@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Models\User;
 
+use App\Models\Product;
+
 class HomeController extends Controller
 {
     public function redirect()
@@ -21,7 +23,8 @@ class HomeController extends Controller
 
         else
         {
-            return view('user.home');
+            $data = product::paginate(3); # all the product table values will be stored in the data variable
+            return view('user.home', compact('data'));
         }
 
     }
@@ -36,7 +39,8 @@ class HomeController extends Controller
 
         else
         {
-            return view('user.home');
+            $data = product::paginate(3); # all the product table values will be stored in the data variable
+            return view('user.home', compact('data'));
         }
     }
 }
