@@ -55,4 +55,40 @@ class AdminController extends Controller
         return redirect()->back()->with('message','Product Deleted');
 
     }
+
+    public function updateview($id)
+    {
+        $data = product::find($id);
+
+        return view('admin.updateview',compact('data'));
+    }
+
+    public function updateproduct(Request $request,$id)
+    {
+        $data = product::find($id); // getting specific product id 
+
+        $image=$request->file; # get file from the name input in form "requesting the file and store it in the image variable"
+
+        if($image)
+        {
+            $imagename=time().'.'.$image->getClientOriginalExtension(); # stores image uniquely using this format "renaming the image using the time() function
+
+            $request->file->move('productimage',$imagename); // saving the image in the public folder named productimage
+
+            $data->image=$imagename; // saving the image in the db
+        }
+
+
+        $data->title=$request->title;
+
+        $data->price=$request->price;
+
+        $data->description=$request->des;
+
+        $data->quantity=$request->quantity;
+
+        $data->save(); // save all data in the table
+
+        return redirect()->back()->with('message','Product Updated Successfully');
+    }
 }
