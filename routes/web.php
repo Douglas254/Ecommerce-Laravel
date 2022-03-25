@@ -41,6 +41,4 @@ Route::get('/updateview/{id}',[AdminController::class,'updateview']);
 
 Route::post('/updateproduct/{id}',[AdminController::class,'updateproduct']);
 
-
-
-
+Route::get('/search',[HomeController::class,'search']);
