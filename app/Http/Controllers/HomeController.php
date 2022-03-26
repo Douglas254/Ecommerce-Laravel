@@ -111,4 +111,13 @@ class HomeController extends Controller
 
         return view('user.showcart',compact('count','cart'));
     }
+
+    public function deletecart($id)
+    {
+        $data=cart::find($id); // searching for the specific id in the cart table
+
+        $data->delete(); // deleting the id 
+
+        return redirect()->back()->with('message','Product Removed Successfully'); // stay on the same page 
+    }
 }
