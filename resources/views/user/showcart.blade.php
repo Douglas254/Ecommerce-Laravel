@@ -71,7 +71,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                         @auth
 
                           <li class="nav-item">
-                            <a class="nav-link" href="{{'showproduct'}}"> <i class="fa fa-shopping-cart"></i>Cart[{{$count}}]</a>
+                            <a class="nav-link" href="{{'showproduct'}}"> <i class="fa fa-shopping-cart" style="font-size: 20px; padding-right:5px;"></i>Cart[{{$count}}]</a>
                            
                           </li>
 
@@ -99,7 +99,7 @@ https://templatemo.com/tm-546-sixteen-clothing
             
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span style="padding-right: 5px; font-size: 20px;">X</span></button>
 
-            {{session()->get('message')}}
+           {{session()->get('message')}}   <!-- prints the message -->
 
         </div>
     @endif
@@ -113,6 +113,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <td style="padding: 10px; font-size: 20px; color: cyan">Product Name</td>
                 <td style="padding: 10px; font-size: 20px; color: cyan">Quantity</td>
                 <td style="padding: 10px; font-size: 20px; color: cyan">Price</td>
+                <td style="padding: 10px; font-size: 20px; color: cyan">Action</td>
             </tr>
 
             @foreach($cart as $carts)
@@ -121,6 +122,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <td style="padding: 10px; color: white">{{$carts->product_title}}</td>
                 <td style="padding: 10px; color: white">{{$carts->quantity}}</td>
                 <td style="padding: 10px; color: white">{{$carts->price}}</td>
+                <td style="padding: 10px; color: white"><a class="btn btn-danger" href="{{url('deletecart',$carts->id)}}">Delete</a></td>
               </tr>
 
             @endforeach
