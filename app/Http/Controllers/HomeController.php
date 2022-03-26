@@ -26,7 +26,13 @@ class HomeController extends Controller
         else
         {
             $data = product::paginate(3); # all the product table values will be stored in the data variable
-            return view('user.home', compact('data'));
+
+            $user=auth()->user(); // getting the user currently logged in
+
+            $count=cart::where('phone',$user->phone)->count(); //getting user phone number from the user table and comparing it with the cart table phone number column and returning in the count how many in the phone number is in the cart
+
+
+            return view('user.home', compact('data','count'));
         }
 
     }
@@ -93,5 +99,16 @@ class HomeController extends Controller
         {
             return redirect('login');
         }
+    }
+
+    public function showcart()
+    {
+        $user=auth()->user(); // getting the user currently logged in
+
+        $cart=cart::where('phone',$user->phone)->get(); // getting which product the specific user added to the cart and sending that specific product to our user.showcart view
+
+        $count=cart::where('phone',$user->phone)->count(); //getting user phone number from the user table and comparing it with the cart table phone number column and returning in the count how many in the phone number is in the cart
+
+        return view('user.showcart',compact('count','cart'));
     }
 }
