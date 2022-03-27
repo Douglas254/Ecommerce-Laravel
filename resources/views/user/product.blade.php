@@ -5,7 +5,7 @@
             <div class="col-md-12">
                 <div class="section-heading">
                     <h2>Latest Products</h2>
-                    <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+                    <a href="#">view all products <i class="fa fa-angle-right"></i></a>
 
                     <form action="{{url('search')}}" method="get" class="form-inline" style="float: right; padding: 10px">
                         <input class="form-control" type="search" name="search" placeholder="Search">
@@ -28,7 +28,7 @@
 
                     @csrf
 
-                    <input type="number" min="1" class="form-control" style="width: 100px;" name="quantity"><br>
+                    <input type="number" min="1" value="1" class="form-control" style="width: 100px;" name="quantity"><br>
                     <input type="submit" style="color: black; font-weight: bold;" class="btn btn-primary" value="Add Cart">
                 </form>
                 </div>
