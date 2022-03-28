@@ -10,6 +10,8 @@ use App\Models\Product;
 
 use App\Models\Order;
 
+use App\Models\User;
+
 class AdminController extends Controller
 {
     public function product()
@@ -126,6 +128,13 @@ class AdminController extends Controller
         $order->save();
 
         return redirect()->back();
+    }
+
+    public function registeredusers()
+    {
+        $users=user::all();
+
+        return view('admin.registeredusers',compact('users'));
     }
 
 

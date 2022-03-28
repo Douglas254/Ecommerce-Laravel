@@ -71,7 +71,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                         @auth
 
                           <li class="nav-item">
-                            <a class="nav-link" href="{{'showproduct'}}"> <i class="fa fa-shopping-cart" style="font-size: 20px; padding-right:5px;"></i>Cart[{{$count}}]</a>
+                            <a class="nav-link" href="{{'showcart'}}"> <i class="fa fa-shopping-cart" style="font-size: 20px; padding-right:5px;"></i>Cart[{{$count}}]</a>
                            
                           </li>
 

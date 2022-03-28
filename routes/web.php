@@ -24,6 +24,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::middleware(['auth', 'isUser'])->get('/redirect', function () {
+    return view('user.home');
+})->name('redirect');
 
 Route::get('/redirect',[HomeController::class,'redirect']);
 
@@ -54,3 +57,5 @@ Route::post('/order',[HomeController::class,'confirmorder']);
 Route::get('/showorder',[AdminController::class,'showorder']);
 
 Route::get('/updatestatus/{id}',[AdminController::class,'updatestatus']);
+
+Route::get('/registeredusers',[AdminController::class,'registeredusers']);        
