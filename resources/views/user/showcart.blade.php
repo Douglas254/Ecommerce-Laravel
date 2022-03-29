@@ -113,15 +113,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <td style="padding: 10px; font-size: 20px; color: cyan">Product Name</td>
                 <td style="padding: 10px; font-size: 20px; color: cyan">Quantity</td>
                 <td style="padding: 10px; font-size: 20px; color: cyan">Price</td>
+                <td style="padding: 10px; font-size: 20px; color: cyan">Amount($)</td>
                 <td style="padding: 10px; font-size: 20px; color: cyan">Action</td>
             </tr>
 
             <form action="{{url('order')}}" method="post">
 
               @csrf
-
+                  <!-- declare Total variable with value 0 -->
+                <input type="hidden" value="{{$Total=0}}" hidden="">
               @foreach($cart as $carts)
-
                 <tr style="background-color: black">
                   <td style="padding: 10px; color: white">
                       <input type="text" name="productname[]" value="{{$carts->product_title}}" hidden="">
@@ -133,13 +134,27 @@ https://templatemo.com/tm-546-sixteen-clothing
                   </td>
                   <td style="padding: 10px; color: white">
                       <input type="text" name="price[]" value="{{$carts->price}}" hidden="">
-                      {{$carts->price}}
+                      ${{$carts->price}}
+                  </td>
+                  <td style="padding: 10px; color: white">
+                      <input type="text" name="price[]" value="{{$carts->price}}" hidden="">
+                      <!-- multiplication of the quantity and price values -->
+                      ${{$amount=$carts->quantity * $carts->price}} 
                   </td>
                   <td style="padding: 10px; color: white"><a class="btn btn-danger" href="{{url('deletecart',$carts->id)}}">Delete</a></td>
+                  
                 </tr>
-
+                <!-- summation of all the product price in the cart -->
+                <input type="hidden" value="{{$Total=$amount + $Total}}" hidden="">
               @endforeach
-        </table>
+              <tr style="background-color: black">
+                <td style="color: white; padding:10px; font-size:20px">Cart totals</td>
+                <td></td>
+                <td></td>
+                <td style="padding: 10px; color: white; padding:10px"><span style="color: white; padding:10px; font-size:20px" class="badge badge-pill btn-primary">${{$Total}}</span></td>
+                <td></td>
+              </tr>
+        </table><br>
 
         <button class="btn btn-success">Confirm Order</button>
 

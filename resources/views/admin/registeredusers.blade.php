@@ -19,6 +19,8 @@
             @include('admin.navbar')
             
                 <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                <div class="container" class="title" align="center">
                 <table class="table table-bordered table-striped">
                     <thead>
                         <tr style="background-color: white">
@@ -52,6 +54,8 @@
                         @endforeach
                     </tbody>
                 </table>
+                <div>
+            </div>
                     <!-- partial -->
                 
             @include('admin.script')
