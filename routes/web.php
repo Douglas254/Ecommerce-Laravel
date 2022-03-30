@@ -58,4 +58,6 @@ Route::get('/showorder',[AdminController::class,'showorder']);
 
 Route::get('/updatestatus/{id}',[AdminController::class,'updatestatus']);
 
-Route::get('/registeredusers',[AdminController::class,'registeredusers']);        
+Route::get('/registeredusers',[AdminController::class,'registeredusers']);
+
+Route::get('/report',[AdminController::class,'report']);        

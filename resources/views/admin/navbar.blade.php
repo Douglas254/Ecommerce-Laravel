@@ -42,7 +42,7 @@
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                     href="#"
-                                    >+ Create New Project</a
+                                    >+ Add New Product</a
                                 >
                                 <div
                                     class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"

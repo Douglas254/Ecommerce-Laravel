@@ -52,7 +52,7 @@
 
                 <div class="container-fluid page-body-wrapper">
                 <div class="container" class="title" align="center">
-                    <h1 class="title">Add Product</h1>
+                    <h1 class="title">Update Product</h1>
 
                     @if(session()->has('message'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">

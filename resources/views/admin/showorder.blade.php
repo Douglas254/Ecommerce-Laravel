@@ -31,6 +31,7 @@
                                 <td style="padding:20px" >Quantity</td>
                                 <td style="padding:20px" >Status</td>
                                 <td style="padding:20px" >Action</td>
+                                <td style="padding:20px"><a class="btn btn-primary" href="{{url('report')}}">Generate Report</a></td>
                             </tr>
 
                             @foreach($order as $orders)

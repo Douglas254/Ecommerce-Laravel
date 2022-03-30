@@ -137,5 +137,21 @@ class AdminController extends Controller
         return view('admin.registeredusers',compact('users'));
     }
 
+    public function report()
+    {
+        if (request()->start_date || request()->end_date)
+        {
+
+            $start_date = Carbon::parse(request()->start_date)->toDateTimeString();
+            $end_date = Carbon::parse(request()->end_date)->toDateTimeString();
+            $data = order::whereBetween('created_at',[$start_date,$end_date])->get();
+        } else
+         {
+            //  $data=order::all();
+            $data = order::latest()->get();
+         }
+            return view('admin.report',compact('data'));
+    }
+
 
 }
