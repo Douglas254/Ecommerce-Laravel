@@ -1,64 +1,74 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 🛒 E-Commerce
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Homepage](https://user-images.githubusercontent.com/51504850/160773023-0901bc7d-9216-4b4d-9f88-3b02586bbcf2.png)
 
-## About Laravel
+## 📄 Registration Page
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![Registerpage](https://user-images.githubusercontent.com/51504850/160773328-6549de9e-01ea-4f09-a64c-ead482b9e2b7.png)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📄 Login Page(Administrator)
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![adminpage](https://user-images.githubusercontent.com/51504850/160777912-b7bb7b15-f6e2-41e4-bb1b-3987f0a3646b.png)
 
-## Learning Laravel
+# <p align="center">🌟`ADMINISTRATOR`🌟</p>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+# :white_check_mark: Admin Dashboard 
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![admindashboard](https://user-images.githubusercontent.com/51504850/160786934-fb121a1f-3b99-47e0-a53a-2b7fca3c3871.png)
 
-## Laravel Sponsors
+## :white_check_mark: Add new product
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![addnewproduct](https://user-images.githubusercontent.com/51504850/160787344-44805cc5-71aa-427c-ad48-4b8e41e0ec3c.png)
 
-### Premium Partners
+## :white_check_mark: Show all Products
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+![showallproduct](https://user-images.githubusercontent.com/51504850/160787947-e8738a37-13aa-46b9-ac07-06cea7b02db6.png)
 
-## Contributing
+## :white_check_mark: Update old product
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+![updatetheproduct](https://user-images.githubusercontent.com/51504850/160788075-a959b6c6-670a-4236-bee3-f5d013819d84.png)
 
-## Code of Conduct
+## :white_check_mark: Orders & Report
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![ordersandreport](https://user-images.githubusercontent.com/51504850/160788265-9844b8d9-bdad-4b9e-a36f-21b04062a4d3.png)
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## :white_check_mark: Registered Users
+---
 
-## License
+![registeredusers](https://user-images.githubusercontent.com/51504850/160788510-71e4e8d7-2bf1-401e-aa86-117ed75f7786.png)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# <p align="center">** ⭐⭐⭐ **</p>
+
+## 📄 Login Page(Normal Users) 
+---
+
+![userloginpage](https://user-images.githubusercontent.com/51504850/160773667-51f8f834-bf4a-48ab-97a6-ec928a372441.png)
+
+# <p align="center">🌟`NORMAL USERS`🌟</p>
+
+## :white_check_mark: View Products Section
+---
+
+![Product2](https://user-images.githubusercontent.com/51504850/160774125-b8f16551-0379-468a-a78c-a10aa4f37185.png)
+
+---
+
+![product3](https://user-images.githubusercontent.com/51504850/160774157-17938fed-fde8-4c7e-886c-9f371c6a7ae5.png)
+
+## :white_check_mark: Show Cart
+---
+
+![cartproducs](https://user-images.githubusercontent.com/51504850/160776111-fd94bf16-5f69-4f19-8fa2-b9f4c69cbddd.png)
+
+---
+
+![cartproduct2](https://user-images.githubusercontent.com/51504850/160776147-ab337667-9f27-4d62-9727-87a6ec13ecb5.png)
+
